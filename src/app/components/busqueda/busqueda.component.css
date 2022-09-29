@@ -1,0 +1,12 @@
+.img-fluid{
+    height: 200px;
+}
+
+.item{
+    cursor: pointer;
+}
+
+.item:hover{
+   background-color: rgb(250, 250, 250);
+}
+

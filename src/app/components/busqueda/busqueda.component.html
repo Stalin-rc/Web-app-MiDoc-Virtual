@@ -1,0 +1,164 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <br>
+    <br>
+    <h1>Inicio | Panadol</h1>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card w-100">
+                <div class="card-header">
+                    <a class="btn" *ngIf="!desplegado"><i class="fa-sharp fa-solid fa-plus" (click)="desplegar()"></i></a>
+                    <a class="btn" *ngIf="desplegado"><i class="fa-solid fa-minus" (click)="desplegar()"></i></a> 
+                    Filtros
+                </div>
+                <div class="card-body" *ngIf="desplegado">
+                    <div class="card mb-2">
+                        <div class="card-header">
+                            Tipo de medicamento
+                        </div>
+                        <div class="card-body">
+                            <mat-radio-group>
+                                <mat-radio-button value="auto" class="me-2">Laboratorio</mat-radio-button>
+                                <mat-radio-button value="always" class="me-2">Genérico</mat-radio-button>
+                            </mat-radio-group>
+                        </div>
+                    </div>
+                    <div class="card mb-2">
+                        <div class="card-header">
+                            Subcategorias
+                        </div>
+                        <div class="card-body">
+                            <mat-radio-group>
+                                <mat-radio-button value="auto" class="mb-2">Análgesico y Antiperético</mat-radio-button> <br>
+                                <mat-radio-button value="always" class="mb-2">Analgésico</mat-radio-button> <br>
+                                <mat-radio-button value="auto" class="mb-2">Antigripal</mat-radio-button> <br>
+                                <mat-radio-button value="always" class="mb-2">Congestión nasal</mat-radio-button>
+                            </mat-radio-group>
+                        </div>
+                    </div>
+                    <div class="card mb-2">
+                        <div class="card-header">
+                           Marcas
+                        </div>
+                        <div class="card-body">
+                            <mat-radio-group>
+                                <mat-radio-button value="auto" class="mb-2">GSK</mat-radio-button> <br>
+                                <mat-radio-button value="always" class="mb-2">Panadol</mat-radio-button> <br>
+                            </mat-radio-group>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            Farmacias principales
+                        </div>
+                        <div class="card-body">
+                            <mat-radio-group>
+                                <mat-radio-button value="auto" class="mb-2">InKafarma</mat-radio-button> <br>
+                                <mat-radio-button value="always" class="mb-2">Mifarma</mat-radio-button> <br>
+                                <mat-radio-button value="auto" class="mb-2">Ahorro y salud</mat-radio-button> <br>
+                                <mat-radio-button value="always" class="mb-2">Farmacia universal</mat-radio-button>
+                            </mat-radio-group>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9 mb-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 px-4 item text-center mb-5" routerLink="/detalle">
+                        <img src="../../../assets/img/panadol.jpg" alt="img-panadol" class="img-fluid">
+                        <div>
+                            <h2 class="text-center">Multiflora comprimido Masticable - 15 Unidades</h2>
+                            <div class="d-flex justify-content-between">
+                                <span class="fs-5">s/. 2.20</span>
+                                <span class="fs-6 text-danger"><del>s/. 11.20</del></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 px-4 item text-center mb-5" routerLink="/detalle">
+                        <img src="../../../assets/img/nexcare.jpg" alt="img-panadol" class="img-fluid">
+                        <div>
+                            <h2 class="text-center">Gesidol Forte 500mg+65mg Tableta recubierta</h2>
+                            <div class="d-flex justify-content-between">
+                                <span class="fs-5">s/. 9.80</span>
+                                <span class="fs-6 text-danger"><del>s/. 10.20</del></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 px-4 item text-center mb-5" routerLink="/detalle">
+                        <img src="../../../assets/img/ansaplast.jpg" alt="img-panadol" class="img-fluid">
+                        <div>
+                            <h2 class="text-center text-center">EVARE CAPSULAS FRASCO - 30 UN</h2>
+                            <div class="d-flex justify-content-between">
+                                <span class="fs-5">s/. 0.90</span>
+                                <span class="fs-6 text-danger"><del>s/. 8.20</del></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 px-4 item text-center mb-5" routerLink="/detalle">
+                        <img src="../../../assets/img/nexcare.jpg" alt="img-panadol" class="img-fluid">
+                        <div>
+                            <h2 class="text-center">Multiflora comprimido Masticable - 15 Unidades</h2>
+                            <div class="d-flex justify-content-between">
+                                <span class="fs-5">s/. 6.50</span>
+                                <span class="fs-6 text-danger"><del>s/. 4.20</del></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 px-4 item text-center mb-5" routerLink="/detalle">
+                        <img src="../../../assets/img/ansaplast.jpg" alt="img-panadol" class="img-fluid">
+                        <div>
+                            <h2 class="text-center">Multiflora comprimido Masticable - 15 Unidades</h2>
+                            <div class="d-flex justify-content-between">
+                                <span class="fs-5">s/. 8.10</span>
+                                <span class="fs-6 text-danger"><del>s/. 8.20</del></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 px-4 item text-center mb-5" routerLink="/detalle">
+                        <img src="../../../assets/img/panadol.jpg" alt="img-panadol" class="img-fluid">
+                        <div>
+                            <h2 class="text-center">Multiflora comprimido Masticable - 15 Unidades</h2>
+                            <div class="d-flex justify-content-between">
+                                <span class="fs-5">s/. 1.50</span>
+                                <span class="fs-6 text-danger"><del>s/. 3.20</del></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 px-4 item text-center mb-5" routerLink="/detalle">
+                        <img src="../../../assets/img/ansaplast.jpg" alt="img-panadol" class="img-fluid">
+                        <div>
+                            <h2 class="text-center">Multiflora comprimido Masticable - 15 Unidades</h2>
+                            <div class="d-flex justify-content-between">
+                                <span class="fs-5">s/. 5.80</span>
+                                <span class="fs-6 text-danger"><del>s/. 2.20</del></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 px-4 item text-center mb-5" routerLink="/detalle">
+                        <img src="../../../assets/img/panadol.jpg" alt="img-panadol" class="img-fluid">
+                        <div>
+                            <h2 class="text-center">Multiflora comprimido Masticable - 15 Unidades</h2>
+                            <div class="d-flex justify-content-between">
+                                <span class="fs-5">s/. 3.30</span>
+                                <span class="fs-6 text-danger"><del>s/. 8.20</del></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 px-4 item text-center mb-5" routerLink="/detalle">
+                        <img src="../../../assets/img/panadol.jpg" alt="img-panadol" class="img-fluid">
+                        <div>
+                            <h2 class="text-center">Multiflora comprimido Masticable - 15 Unidades</h2>
+                            <div class="d-flex justify-content-between">
+                                <span class="fs-5">s/. 6.20</span>
+                                <span class="fs-6 text-danger"><del>s/. 11.20</del></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

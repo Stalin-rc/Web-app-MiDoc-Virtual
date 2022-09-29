@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 mt-5 py-5">
+            <mat-card>
+                <h1 class="text-center fw-bolder">Iniciar sesión</h1>
+                <form>
+                    <mat-form-field appearance="standard" class="w-100">
+                        <mat-label>Correo electrónico</mat-label>
+                        <input matInput formControlName="" placeholder="Escriba su nombre.." #input>
+                    </mat-form-field> <br>
+                    <mat-form-field appearance="standard" class="w-100">
+                        <mat-label>Contraseña</mat-label>
+                        <input matInput formControlName="" type="password" placeholder="Escriba su nombre.." #input>
+                    </mat-form-field> <br>
+                    <br>
+                    <button mat-raised-button color="primary" class="w-100" routerLink="/home/1">Ingresar</button>
+                </form>
+                <button mat-raised-button color="secondary" class="mt-2 w-100">Continuar con Google
+                    <i class="fa-brands fa-google ms-2"></i>
+                </button>
+                <button mat-raised-button color="secondary" class="mt-2 w-100">Continuar con Facebook
+                    <i class="fa-brands fa-facebook ms-2"></i>
+                </button>
+                <br>
+                <br>
+                <br>
+                <div class="text-center"> <a routerLink="/olvidar" class="enlace">Olvide mi contraseña</a></div>
+                <br>
+                <div class="text-center"> <a routerLink="/registrar" class="enlace">Registrarse</a></div>
+            </mat-card>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>

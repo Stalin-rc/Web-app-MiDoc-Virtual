@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-rosa fs-5">
+  <div class="container">
+    <a class="navbar-brand fw-bolder">Mi DocVirtual</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="/home">Inicio</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button *ngIf="!logeado"  mat-raised-button color="primary" class="pe-4" type="button" routerLink="/login">Ingresar</button>
+      </form>
+       <div *ngIf="logeado">
+        
+        <img src="../../../assets/img/perfil.jpg" alt="img-perfil" class="perfil m-2">
+        <span class="text-white me-2">Michael</span>
+        <i class="fa-solid fa-heart fs-5 text-white"></i>
+      </div> 
+    </div>
+  </div>
+</nav>

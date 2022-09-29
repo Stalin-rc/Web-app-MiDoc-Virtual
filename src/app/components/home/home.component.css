@@ -1,0 +1,31 @@
+.bg-rosa{
+    background-color: rgb(233, 30, 90);
+}
+.h-250{
+    height: 150px;
+}
+
+.bg-azul{
+    background-color: rgb(63, 81, 181);
+}
+.content{
+    width: 50%;
+}
+@media screen and (max-width: 770px){
+    .content{
+        width: 100%;
+    }
+}
+.title{
+    line-height: 40px;
+}
+
+.logo{
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 1px 2px 1px 1px black;
+}
+
+.img-farma{
+    width: 200px;
+}
